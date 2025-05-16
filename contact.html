@@ -14,6 +14,23 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
     <link href="./assets/favicon.ico" rel="icon">
     <style>
+        html {
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: #fff;
+            color: #222;
+        }
+
         .lang {
             display: none;
         }
@@ -40,7 +57,7 @@
             background: azure;
             border: none;
             margin: 0 2px;
-            padding: 4px 10px;
+            padding: 8px 16px;
             border-radius: 4px;
             cursor: pointer;
             font-weight: bold;
@@ -48,32 +65,108 @@
             transition: background 0.2s;
         }
 
-            #lang-switcher-nav button:hover, #lang-switcher-nav button:focus {
+            #lang-switcher-nav button:hover,
+            #lang-switcher-nav button:focus {
                 background: rgb(224, 235, 224);
             }
+        /* Responsive images and videos */
+        img, video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* Touch-friendly navigation */
+        .navbar-toggle {
+            min-width: 44px;
+            min-height: 44px;
+        }
 
-        #background-video {
-            position: fixed;
-            top: 0;
-            left: 0;
+        .nav > li > a, #lang-switcher-nav button {
+            padding: 12px 16px;
+            font-size: 1.1em;
+        }
+        /* Responsive container padding */
+        .container {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        /* Responsive form and address columns */
+        .address-container {
+            margin-top: 32px;
+        }
+        /* Responsive form controls */
+        .form-control, textarea {
+            font-size: 1em;
+            padding: 10px;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
+            box-sizing: border-box;
+            margin-bottom: 12px;
         }
-        .section-container {
-            position: relative;
-            z-index: 0;
-            padding: 50px 0;
+
+        .btn {
+            min-width: 44px;
+            min-height: 44px;
+            font-size: 1.1em;
+            padding: 10px 24px;
         }
-        .section-container-spacer {
-            padding: 100px 0;
-        }
-            .section-container-spacer h1 {
-                color: black;
+        /* Media queries for mobile */
+        @media (max-width: 992px) {
+            .col-md-7, .col-md-5, .col-md-10, .col-md-offset-1 {
+                width: 100% !important;
+                float: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
             }
 
+            .address-container {
+                margin-top: 32px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 15px;
+            }
+
+            .container {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+
+            .section-container-spacer {
+                padding: 40px 0;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 12px 0;
+            }
+
+            .address-container {
+                margin-top: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            html {
+                font-size: 14px;
+            }
+
+            .container {
+                padding-left: 4px;
+                padding-right: 4px;
+            }
+
+            .section-container-spacer {
+                padding: 20px 0;
+            }
+
+            .btn {
+                font-size: 1em;
+            }
+        }
     </style>
+
 
     <title>˚₊‧Get in touch‧₊˚ </title>
 
