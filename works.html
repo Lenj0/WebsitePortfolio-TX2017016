@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="description">
+    <meta name="google" content="notranslate" />
+    <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+    <link href="./assets/favicon.ico" rel="icon">
+
+    <title>⁺˚⋆｡°✩₊My Projects₊✩°｡⋆˚⁺</title>
+
+    <link href="./main.3f6952e4.css" rel="stylesheet">
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .lang {
+            display: none;
+        }
+
+        /* Removed: .lang.lang-en { display: inline; } */
+
+        /* Video background CSS */
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        body.lang-en .lang-en {
+            display: inline;
+        }
+
+        body.lang-el .lang-el {
+            display: inline;
+        }
+
+        h1 .lang-el,
+        h2 .lang-el,
+        h3 .lang-el,
+        h4 .lang-el,
+        h5 .lang-el,
+        h6 .lang-el {
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+
+        #lang-switcher-nav button {
+            color: darkseagreen;
+            background: azure;
+            border: none;
+            margin: 0 2px;
+            padding: 4px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1em;
+            transition: background 0.2s;
+        }
+
+            #lang-switcher-nav button:hover, #lang-switcher-nav button:focus {
+                background: rgb(224, 235, 224);
+            }
+    </style>
+</head>
+
+<body class="lang-en">
+    <div id="site-border-left"></div>
+    <div id="site-border-right"></div>
+    <div id="site-border-top"></div>
+    <div id="site-border-bottom"></div>
+
+    <!-- video background -->
+    <video class="video-background" autoplay muted loop>
+        <source src="./assets/videos/backgroundWorks.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <header>
+        <nav class="navbar  navbar-fixed-top navbar-default">
+            <div class="container">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">
+                        <span class="lang lang-en">Toggle navigation</span>
+                        <span class="lang lang-el">Εναλλαγή πλοήγησης</span>
+                    </span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav ">
+                        <li><a href="./index.html" title=""><span class="lang lang-en">01 : Home</span><span class="lang lang-el">01 : Αρχική</span></a></li>
+                        <li><a href="./works.html" title=""><span class="lang lang-en">02 : Works</span><span class="lang lang-el">02 : Έργα</span></a></li>
+                        <li><a href="./about.html" title=""><span class="lang lang-en">03 : About me</span><span class="lang lang-el">03 : Σχετικά</span></a></li>
+                        <li><a href="./contact.html" title=""><span class="lang lang-en">04 : Contact</span><span class="lang lang-el">04 : Επικοινωνία</span></a></li>
+                        
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="lang-switcher-nav" style="padding-left:10px;">
+                            <button onclick="setLang('en')" style="margin-right:4px;">EN</button>
+                            <button onclick="setLang('el')">GR</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="section-container">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+                    <div class="text-center">
+                        <h1 class="h2">
+                            <span class="lang lang-en">02 : Works</span>
+                            <span class="lang lang-el">02 : Έργα</span>
+                        </h1>
+                        <p>
+                            <span class="lang lang-en"></span>
+                            <span class="lang lang-el"></span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+
+                    <div id="myCarousel" class="carousel slide projects-carousel">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <a href="./work.html" title="" class="black-image-project-hover">
+                                            <img src="./assets/images/work01-hover.gif" alt="" style="width:480px; height:270px;" class="img-responsive">
+                                        </a>
+                                        <div class="card-container card-container-lg">
+                                            <h4>001/006</h4>
+                                            <h3>
+                                                <span class="lang lang-en">Photography</span>
+                                                <span class="lang lang-el">Φωτογραφία</span>
+                                            </h3>
+                                            <p>
+                                                <span class="lang lang-en">experiencing through the lenses</span>
+                                                <span class="lang lang-el">βιωματική ματιά μέσα από το φακό</span>
+                                            </p>
+                                            <a href="./work-photography.html" title="" class="btn btn-default">
+                                                <span class="lang lang-en">Discover</span>
+                                                <span class="lang lang-el">Ανακάλυψε</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <a href="./work.html" title="" class="black-image-project-hover">
+                                            <img src="./assets/images/work02-hover.gif" alt="" style="width:480px; height:270px;" class="img-responsive">
+                                        </a>
+                                        <div class="card-container card-container-lg">
+                                            <h4>002/006</h4>
+                                            <h3>
+                                                <span class="lang lang-en">Videography</span>
+                                                <span class="lang lang-el">Βίντεο</span>
+                                            </h3>
+                                            <p>
+                                                <span class="lang lang-en">concept creating | shooting | editing</span>
+                                                <span class="lang lang-el">σύλληψη ιδέας | λήψη | μοντάζ</span>
+                                            </p>
+                                            <a href="./work-video.html" title="" class="btn btn-default">
+                                                <span class="lang lang-en">Discover</span>
+                                                <span class="lang lang-el">Ανακάλυψε</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <a href="./work.html" title="" class="black-image-project-hover">
+                                            <img src="./assets/images/work03-hover.gif" alt="" style="width:480px; height:270px;" class="img-responsive">
+                                        </a>
+                                        <div class="card-container card-container-lg">
+                                            <h4>003/006</h4>
+                                            <h3>
+                                                <span class="lang lang-en">coming soon</span>
+                                                <span class="lang lang-el">Προσεχώς..</span>
+                                            </h3>
+                                            <p>
+                                                <span class="lang lang-en">
+                                                    ....work in progress....<br>
+                                                    ·̩̩̥͙＊*•̩̩͙✩•̩̩͙*˚ new things are on the way  ˚*•̩̩͙✩•̩̩͙*˚＊·̩̩̥͙ 𓇼˚
+                                                </span>
+                                                <span class="lang lang-el">
+                                                    ....σε εξέλιξη....<br>
+                                                    ·̩̩̥͙＊*•̩̩͙✩•̩̩͙*˚ νέα πράγματα έρχονται  ˚*•̩̩͙✩•̩̩͙*˚＊·̩̩̥͙ 𓇼˚
+                                                </span>
+                                            </p>
+                                            <a href="./work.html" title="" class="btn btn-default">
+                                                <span class="lang lang-en">Discover</span>
+                                                <span class="lang lang-el">Ανακάλυψε?</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <!--/item-->
+                            <div class="item hidden">
+                                <!-- Add the hidden class here -->
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <a href="./work.html" class="black-image-project-hover">
+                                            <img src="./assets/images/work02-hover.jpg" alt="Image" style="width:480px; height:270px;" class="img-responsive">
+                                        </a>
+                                        <div class="card-container">
+                                            <h4>004/006</h4>
+                                            <h3>
+                                                <span class="lang lang-en">Nulla scelerisque</span>
+                                                <span class="lang lang-el">Nulla scelerisque</span>
+                                            </h3>
+                                            <p>
+                                                <span class="lang lang-en">Proin pharetra metus id iaculis dignissim. In aliquet lorem ut ex ullamcorper.</span>
+                                                <span class="lang lang-el">Proin pharetra metus id iaculis dignissim. In aliquet lorem ut ex ullamcorper.</span>
+                                            </p>
+                                            <a href="./work.html" class="btn btn-default">
+                                                <span class="lang lang-en">Discover</span>
+                                                <span class="lang lang-el">Ανακάλυψε</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <a href="./work.html" class="black-image-project-hover">
+                                            <img src="./assets/images/work01-hover.jpg" alt="Image" style="width:480px; height:270px;" class="img-responsive">
+                                        </a>
+                                        <div class="card-container">
+                                            <h4>005/006</h4>
+                                            <h3>
+                                                <span class="lang lang-en">Fringilla sit amet</span>
+                                                <span class="lang lang-el">Fringilla sit amet</span>
+                                            </h3>
+                                            <p>
+                                                <span class="lang lang-en">Nulla facilisi. Vivamus vestibulum, elit in scelerisque ultricies.</span>
+                                                <span class="lang lang-el">Nulla facilisi. Vivamus vestibulum, elit in scelerisque ultricies.</span>
+                                            </p>
+                                            <a href="./work.html" class="btn btn-default">
+                                                <span class="lang lang-en">Discover</span>
+                                                <span class="lang lang-el">Ανακάλυψε</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <a href="./work.html" class="black-image-project-hover">
+                                            <img src="./assets/images/work03-hover.jpg" alt="Image" style="width:480px; height:270px;" class="img-responsive">
+                                        </a>
+                                        <div class="card-container">
+                                            <h4>006/006</h4>
+                                            <h3>
+                                                <span class="lang lang-en">Vivamus vestibulum</span>
+                                                <span class="lang lang-el">Vivamus vestibulum</span>
+                                            </h3>
+                                            <p>
+                                                <span class="lang lang-en">Fusce sed hendrerit augue, a rhoncus velit. In non lorem mattis, tempor sem sit amet.</span>
+                                                <span class="lang lang-el">Fusce sed hendrerit augue, a rhoncus velit. In non lorem mattis, tempor sem sit amet.</span>
+                                            </p>
+                                            <a href="./work.html" class="btn btn-default">
+                                                <span class="lang lang-en">Discover</span>
+                                                <span class="lang lang-el">Ανακάλυψε</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <!--/item-->
+                        </div>
+                        <!--/carousel-inner-->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+                    </div>
+                    <!--/myCarousel-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-container text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Website created by me</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function setLang(lang) {
+            document.body.classList.remove('lang-en', 'lang-el');
+            document.body.classList.add('lang-' + lang);
+            localStorage.setItem('site-lang', lang);
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            var lang = localStorage.getItem('site-lang') || 'en';
+            setLang(lang);
+        });
+    </script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
+
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-XXXXX-X', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    -->
+    <script type="text/javascript" src="./main.70a66962.js"></script>
+</body>
+
+</html>

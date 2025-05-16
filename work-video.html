@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="Video portfolio and artist statement for Lena, visual artist and videographer.">
+    <meta name="google" content="notranslate" />
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+    <link href="./assets/favicon.ico" rel="icon">
+
+    <title>Videography 🎥</title>
+
+    <link href="./main.3f6952e4.css" rel="stylesheet">
+    <style>
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .card-container {
+            background: rgba(0,0,0,0.5);
+            color: rgb(238, 255, 204);
+            text-align: justify;
+            font-size: medium;
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .spacer {
+            height: 250px;
+        }
+
+        .footer-container {
+            color: rgb(204, 255, 217);
+        }
+
+        .page-title {
+            color: rgba(247, 255, 230, 1);
+        }
+
+        .lang {
+            display: none;
+        }
+
+        body.lang-en .lang-en {
+            display: inline;
+        }
+
+        body.lang-el .lang-el {
+            display: inline;
+        }
+
+        h1 .lang-el,
+        h2 .lang-el,
+        h3 .lang-el,
+        h4 .lang-el,
+        h5 .lang-el,
+        h6 .lang-el {
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        #lang-switcher-nav button {
+            color: darkseagreen;
+            background: azure;
+            border: none;
+            margin: 0 2px;
+            padding: 4px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1em;
+            transition: background 0.2s;
+        }
+
+            #lang-switcher-nav button:hover, #lang-switcher-nav button:focus {
+                background: rgb(224, 235, 224);
+            }
+    </style>
+</head>
+
+<body class="lang-en">
+    <div id="site-border-left"></div>
+    <div id="site-border-right"></div>
+    <div id="site-border-top"></div>
+    <div id="site-border-bottom"></div>
+
+    <!-- video background -->
+    <video class="video-background" autoplay muted loop title="Background video">
+        <source src="./assets/videos/backgroundWork-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <header>
+        <nav class="navbar navbar-fixed-top navbar-default" aria-label="Main navigation">
+            <div class="container">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">
+                        <span class="lang lang-en">Toggle navigation</span>
+                        <span class="lang lang-el">Εναλλαγή πλοήγησης</span>
+                    </span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav ">
+                        <li><a href="./index.html" title=""><span class="lang lang-en">01 : Home</span><span class="lang lang-el">01 : Αρχική</span></a></li>
+                        <li><a href="./works.html" title=""><span class="lang lang-en">02 : Works</span><span class="lang lang-el">02 : Έργα</span></a></li>
+                        <li><a href="./about.html" title=""><span class="lang lang-en">03 : About me</span><span class="lang lang-el">03 : Σχετικά</span></a></li>
+                        <li><a href="./contact.html" title=""><span class="lang lang-en">04 : Contact</span><span class="lang lang-el">04 : Επικοινωνία</span></a></li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg" style="display: flex; align-items: center;">
+                        <li><a href="./work-photography.html" title="" class="active">001</a></li>
+                        <li><a href="./work-video.html" title="">002</a></li>
+                        <li><a href="./index.html" title="">003</a></li>
+                        <li><a href="./index.html" title="">004</a></li>
+                        <li><a href="./index.html" title="">005</a></li>
+                        <li><a href="./contact.html" title="">006</a></li>
+                        <li id="lang-switcher-nav" style="padding-left:10px;">
+                            <button onclick="setLang('en')" style="margin-right:4px;">EN</button>
+                            <button onclick="setLang('el')">GR</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="spacer"></div>
+                        <div class="card-container">
+                            <div class="text-center">
+                                <h1 class="h2 page-title">
+                                    <span class="lang lang-en">002 : VideoPortfolio</span>
+                                    <span class="lang lang-el">002 : VideoPortfolio</span>
+                                </h1>
+                            </div>
+                            <p>
+                                <span class="lang lang-en">
+                                    <b>Artist Statement</b> <br>
+                                    I move between the mundane and the surreal, capturing the quiet poetry of everyday life or plunging into the delirium of my subconscious. My work is an experiment—a collision of images, rhythms, and emotions that form their own logic. Some days, I find meaning in the smallest gestures, in a glance, in the way light falls on an empty street. Other times, I drift into abstraction, letting sound and motion dissolve the familiar into something unknown.<br>
+                                    Film and video art are my tools for navigating these shifting landscapes. I mix and reshape reality, exploring how stories emerge from fragments—how a fleeting moment can expand into something vast. Personal experience, social undercurrents, and the absurdity of existence all weave into my work. Whether tethered to the world or floating far from it, I seek to reveal the in-between, the transition, the unseen forces that shape what we know.<br>
+                                </span>
+                                <span class="lang lang-el">
+                                    <b>Καλλιτεχνική Δήλωση</b> <br>
+                                    Κινούμαι ανάμεσα στο καθημερινό και το σουρεαλιστικό, άλλοτε καταγράφοντας την ήσυχη ποίηση της καθημερινής ζωής ή άλλοτε βυθιζόμενη στο παραλήρημα του υποσυνείδητου. Η δουλειά μου είναι ένα πείραμα—μια σύγκρουση εικόνων, ρυθμών και συναισθημάτων που δημιουργούν τη δική τους λογική. Κάποιες μέρες, βρίσκω νόημα στις πιο μικρές κινήσεις, σε ένα βλέμμα, στον τρόπο που πέφτει το φως σε έναν άδειο δρόμο. Άλλες φορές, παρασύρομαι στην αφαίρεση, αφήνοντας τον ήχο και την κίνηση να διαλύσουν το οικείο σε κάτι άγνωστο.<br>
+                                    Ο κινηματογράφος και η video art είναι τα εργαλεία μου για να περιηγηθώ σε αυτά τα ρευστά τοπία. Αναμιγνύω και αναδιαμορφώνω την πραγματικότητα, εξερευνώντας πώς οι ιστορίες γεννιούνται από θραύσματα—πώς μια φευγαλέα στιγμή μπορεί να επεκταθεί σε κάτι αχανές. Οι προσωπικές εμπειρίες, οι κοινωνικές μεταβολές και το παράλογο της ύπαρξης υφαίνονται στο έργο μου. Είτε είμαι προσγειωμένη στον κόσμο είτε περιπλανιέμαι μακριά του, αναζητώ να αποκαλύψω το ενδιάμεσο, τη μετάβαση, τις αόρατες δυνάμεις που διαμορφώνουν αυτό που αντιλαμβανόμαστε ως πραγματικό.
+                                    <br>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <div class="content">
+                            <!-- START OF GRID -->
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); grid-gap: 20px;">
+                                <!-- Video 1 -->
+                                <div style="background-color: rgb(242, 230, 255); padding: 15px;">
+                                    <h3 style="border-bottom: 1px solid; margin: 0 0 8px 0; font-size: 18px; font-weight: 600;">
+                                        <span class="lang lang-en">Farewell</span>
+                                        <span class="lang lang-el">Farewell</span>
+                                    </h3>
+                                    <div style="position: relative; width: 100%;  padding-top: 56.25%;">
+                                        <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls poster="./assets/videos/Farewell-thumb.png">
+                                            <source src="./assets/videos/farewell.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                    <p style="margin: 12px 0 0 0;">
+                                        <strong>
+                                            <span class="lang lang-en">Summary:</span>
+                                            <span class="lang lang-el">Περίληψη:</span>
+                                        </strong>
+                                        <span class="lang lang-en">experimental short film <br> Farewell is a work in progress. A narrative on privacy, fulfillment and time - that never waits.</span>
+                                        <span class="lang lang-el">πειραματική ταινία μικρού μήκους <br> Το Farewell είναι υπό εξέλιξη. Μια αφήγηση για την ιδιωτικότητα, την πληρότητα και τον χρόνο - που ποτέ δεν περιμένει.</span>
+                                    </p>
+                                </div>
+
+                                <!-- Video 2 -->
+                                <div style="background-color: rgb(242, 230, 255); padding: 15px;">
+                                    <h3 style="border-bottom: 1px solid; margin: 0 0 8px 0; font-size: 18px; font-weight: 600;">
+                                        <span class="lang lang-en">Visualisation on Music</span>
+                                        <span class="lang lang-el">Μουσική Οπτικοποίηση</span>
+                                    </h3>
+                                    <div style="position: relative; width: 100%; padding-top: 56.25%;">
+                                        <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls poster="./assets/videos/Satur-nine-thumb.png">
+                                            <source src="./assets/videos/Satur-nine.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                    <p style="margin: 12px 0 0 0;">
+                                        <strong>
+                                            <span class="lang lang-en">Summary:</span>
+                                            <span class="lang lang-el">Περίληψη:</span>
+                                        </strong>
+                                        <span class="lang lang-en">Visualisation on Music is a project where electronic music genres get translated into abstract visuals. <br>Current Upload: Satur-nine, composed by Markus Acher</span>
+                                        <span class="lang lang-el">Το Visualisation on Music είναι ένα project όπου τα ηλεκτρονικά μουσικά είδη μεταφράζονται σε αφηρημένες εικόνες. <br>Τρέχον βίντεο: Satur-nine, σύνθεση Markus Acher</span>
+                                    </p>
+                                </div>
+
+                                <!-- Video 3 -->
+                                <div style="background-color: rgb(242, 230, 255); padding: 15px;">
+                                    <h3 style="border-bottom: 1px solid; margin: 0 0 8px 0; font-size: 18px; font-weight: 600;">
+                                        <span class="lang lang-en">tHEbODY</span>
+                                        <span class="lang lang-el">tHEbODY</span>
+                                    </h3>
+                                    <div style="position: relative; width: 100%; padding-top: 56.25%;">
+                                        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                                src="https://www.youtube.com/embed/2BYQclSLfHI"
+                                                title="tHEbODY"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <p style="margin: 12px 0 0 0;">
+                                        <strong>
+                                            <span class="lang lang-en">Summary:</span>
+                                            <span class="lang lang-el">Περίληψη:</span>
+                                        </strong>
+                                        <span class="lang lang-en">a digital collage of free associations on the human body <br> music parts: Leafcutter John - Strings of Consciousness</span>
+                                        <span class="lang lang-el">ένα ψηφιακό κολάζ ελεύθερων συνειρμών για το ανθρώπινο σώμα <br> μουσικά σημεία: Leafcutter John - Strings of Consciousness</span>
+                                    </p>
+                                </div>
+
+                                <!-- Video 4 -->
+                                <div style="background-color: rgb(242, 230, 255); padding: 15px;">
+                                    <h3 style="border-bottom: 1px solid; margin: 0 0 8px 0; font-size: 18px; font-weight: 600;">
+                                        <span class="lang lang-en">AntiCanids (ΑντιΚυνίδες)</span>
+                                        <span class="lang lang-el">ΑντιΚυνίδες</span>
+                                    </h3>
+                                    <div style="position: relative; width: 100%; padding-top: 56.25%;">
+                                        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                                src="https://www.youtube.com/embed/QsdN1ce43Eo"
+                                                title="AntiCanids (ΑντιΚυνίδες)"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <p style="margin: 12px 0 0 0;">
+                                        <strong>
+                                            <span class="lang lang-en">Summary:</span>
+                                            <span class="lang lang-el">Περίληψη:</span>
+                                        </strong>
+                                        <span class="lang lang-en"> social phobia takes you for a ride</span>
+                                        <span class="lang lang-el"> βόλτα με την κοινωνική φοβία</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- END OF GRID -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-container text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>
+                        Website created by me
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function setLang(lang) {
+            document.body.classList.remove('lang-en', 'lang-el');
+            document.body.classList.add('lang-' + lang);
+            localStorage.setItem('site-lang', lang);
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            var lang = localStorage.getItem('site-lang') || 'en';
+            setLang(lang);
+        });
+    </script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
+      <script>
+      (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-XXXXX-X', 'auto');
+      ga('send', 'pageview');
+      </script>
+      -->
+    <script type="text/javascript" src="./main.70a66962.js"></script>
+</body>
+
+</html>

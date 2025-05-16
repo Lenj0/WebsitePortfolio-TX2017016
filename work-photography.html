@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="description" name="description">
+    <meta name="google" content="notranslate" />
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+    <link href="./assets/favicon.ico" rel="icon">
+
+    <title>Photography 📸</title>
+
+    <link href="./main.3f6952e4.css" rel="stylesheet">
+    <style>
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .card-container {
+            background: transparent;
+        }
+
+        .spacer {
+            height: 250px; /* image height */
+        }
+
+        .footer-container p {
+            color: white;
+        } 
+
+        .lang {
+            display: none;
+        }
+
+        body.lang-en .lang-en {
+            display: inline;
+        }
+
+        body.lang-el .lang-el {
+            display: inline;
+        }
+
+        h1 .lang-el,
+        h2 .lang-el,
+        h3 .lang-el,
+        h4 .lang-el,
+        h5 .lang-el,
+        h6 .lang-el {
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        #lang-switcher-nav button {
+            color: darkseagreen;
+            background: azure;
+            border: none;
+            margin: 0 2px;
+            padding: 4px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1em;
+            transition: background 0.2s;
+        }
+
+            #lang-switcher-nav button:hover, #lang-switcher-nav button:focus {
+                background: rgb(224, 235, 224);
+            }
+    </style>
+</head>
+
+<body class="lang-en">
+    <div id="site-border-left"></div>
+    <div id="site-border-right"></div>
+    <div id="site-border-top"></div>
+    <div id="site-border-bottom"></div>
+
+    <header>
+        <nav class="navbar  navbar-fixed-top navbar-default" aria-label="Main navigation">
+            <div class="container">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav ">
+                        <li><a href="./index.html" title=""><span class="lang lang-en">01 : Home</span><span class="lang lang-el">01 : Αρχική</span></a></li>
+                        <li><a href="./works.html" title=""><span class="lang lang-en">02 : Works</span><span class="lang lang-el">02 : Έργα</span></a></li>
+                        <li><a href="./about.html" title=""><span class="lang lang-en">03 : About me</span><span class="lang lang-el">03 : Σχετικά</span></a></li>
+                        <li><a href="./contact.html" title=""><span class="lang lang-en">04 : Contact</span><span class="lang lang-el">04 : Επικοινωνία</span></a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg" style="display: flex; align-items: center;">
+                        <li><a href="./work-photography.html" title="" class="active">001</a></li>
+                        <li><a href="./work-video.html" title="">002</a></li>
+                        <li><a href="./index.html" title="">003</a></li>
+                        <li><a href="./index.html" title="">004</a></li>
+                        <li><a href="./index.html" title="">005</a></li>
+                        <li><a href="./contact.html" title="">006</a></li>
+                        <li id="lang-switcher-nav" style="padding-left:10px;">
+                            <button onclick="setLang('en')" style="margin-right:4px;">EN</button>
+                            <button onclick="setLang('el')">GR</button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <video class="video-background" autoplay muted loop>
+        <source src="./assets/videos/backgroundWorks.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Dark Overlay -->
+    <div class="dark-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="spacer"></div>
+                <div class="card-container">
+                    <div class="text-center">
+                        <h1 class="h2">001 : PhotoPorftolio</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <video class="video-background" autoplay muted loop>
+            <source src="./assets/videos/backgroundWorkPhoto.MOV" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Masonry -->
+        <iframe src="./masonry/masonry-gutterless.html" style="width: 100%; height: 600px; border: none;"></iframe>
+        <!-- End of Masonry -->
+
+        <footer class="footer-container text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>Website created by me | masonry by <a href="https://w3bits.com/labs/css-masonry/">W3Bits</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function setLang(lang) {
+                document.body.classList.remove('lang-en', 'lang-el');
+                document.body.classList.add('lang-' + lang);
+                localStorage.setItem('site-lang', lang);
+            }
+            document.addEventListener('DOMContentLoaded', function () {
+                var lang = localStorage.getItem('site-lang') || 'en';
+                setLang(lang);
+                if (typeof navActivePage === "function") navActivePage();
+            });
+        </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-XXXXX-X', 'auto');
+            ga('send', 'pageview');
+        </script>
+        -->
+        <script type="text/javascript" src="./main.70a66962.js"></script>
+</body>
+
+</html>
+
