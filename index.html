@@ -11,31 +11,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
     <link href="./assets/favicon.ico" rel="icon">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
     <style>
-        html {
-            box-sizing: border-box;
-            font-size: 16px;
-        }
-
-        *, *:before, *:after {
-            box-sizing: inherit;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', Arial, sans-serif;
-            background: #fff;
-            color: #222;
-        }
-
-        body {
-            padding-top: 60px;
-        }
-
         .lang {
             display: none;
         }
@@ -56,13 +32,22 @@
         h6 .lang-el {
             font-family: 'Roboto', Arial, sans-serif;
         }
+        h1 .lang-el,
+        h2 .lang-el,
+        h3 .lang-el,
+        h4 .lang-el,
+        h5 .lang-el,
+        h6 .lang-el {
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
 
         #lang-switcher-nav button {
             color: darkseagreen;
             background: transparent;
             border: none;
             margin: 0 2px;
-            padding: 8px 16px;
+            padding: 4px 10px;
             border-radius: 4px;
             cursor: pointer;
             font-weight: bold;
@@ -70,79 +55,9 @@
             transition: background 0.2s;
         }
 
-            #lang-switcher-nav button:hover,
-            #lang-switcher-nav button:focus {
+            #lang-switcher-nav button:hover, #lang-switcher-nav button:focus {
                 background: rgba(224, 235, 224, 0.1);
             }
-        /* Responsive images and videos */
-        img, video {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        /* Touch-friendly navigation */
-        .navbar-toggle {
-            min-width: 44px;
-            min-height: 44px;
-        }
-
-        .nav > li > a, #lang-switcher-nav button {
-            padding: 12px 16px;
-            font-size: 1.1em;
-        }
-        /* Responsive text content */
-        .text-content h1 {
-            font-size: 10.5rem;
-            line-height: 1.2;
-        }
-        /* Responsive container padding */
-        .container {
-            padding-left: 24px;
-            padding-right: 24px;
-        }
-        /* Media queries for mobile */
-        @media (max-width: 768px) {
-            html {
-                font-size: 15px;
-            }
-
-            .container {
-                padding-left: 8px;
-                padding-right: 8px;
-            }
-
-            .text-content h1 {
-                font-size: 1.5rem;
-            }
-
-            .navbar-nav > li > a {
-                padding: 10px 8px;
-                font-size: 1em;
-            }
-
-            #lang-switcher-nav button {
-                padding: 8px 10px;
-                font-size: 1em;
-            }
-
-            .hero-full-wrapper {
-                padding: 32px 0;
-            }
-        }
-
-        @media (max-width: 480px) {
-            html {
-                font-size: 14px;
-            }
-
-            .text-content h1 {
-                font-size: 1.1rem;
-            }
-
-            .hero-full-wrapper {
-                padding: 16px 0;
-            }
-        }
     </style>
     <title>VisualSeamstress∘◦✂———–</title>
     <link href="./main.3f6952e4.css" rel="stylesheet">
@@ -170,6 +85,7 @@
                         <li><a href="./works.html" title=""><span class="lang lang-en">02 : Works</span><span class="lang lang-el">02 : Έργα</span></a></li>
                         <li><a href="./about.html" title=""><span class="lang lang-en">03 : About me</span><span class="lang lang-el">03 : Σχετικά</span></a></li>
                         <li><a href="./contact.html" title=""><span class="lang lang-en">04 : Contact</span><span class="lang lang-el">04 : Επικοινωνία</span></a></li>
+                        
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li id="lang-switcher-nav" style="padding-left:10px;">
@@ -197,7 +113,7 @@
                                 <div id="typed-strings">
                                     <p>
                                         <span class="lang lang-en">I'm Lena</span>
-                                        <span class="lang lang-el"> Είμαι η Λένα</span>
+                                        
                                     </p>
                                     <p>
                                         <span class="lang lang-en">Visual Artist</span>
@@ -205,7 +121,7 @@
                                     </p>
                                     <p>
                                         <span class="lang lang-en">Working as a Freelancer</span>
-                                        <span class="lang lang-el">Εργάζομαι ως Freelancer</span>
+                                        
                                     </p>
                                 </div>
                                 <span id="typed"></span>

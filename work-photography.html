@@ -17,30 +17,33 @@
     <title>Photography 📸</title>
 
     <link href="./main.3f6952e4.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-
-
     <style>
-        html {
-            box-sizing: border-box;
-            font-size: 16px;
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
         }
 
-        *, *:before, *:after {
-            box-sizing: inherit;
+        .content {
+            position: relative;
+            z-index: 1;
         }
 
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', Arial, sans-serif;
-            background: #fff;
-            color: #222;
+        .card-container {
+            background: transparent;
         }
 
-        body {
-            padding-top: 60px;
+        .spacer {
+            height: 250px; /* image height */
         }
+
+        .footer-container p {
+            color: white;
+        } 
 
         .lang {
             display: none;
@@ -68,7 +71,7 @@
             background: azure;
             border: none;
             margin: 0 2px;
-            padding: 8px 16px;
+            padding: 4px 10px;
             border-radius: 4px;
             cursor: pointer;
             font-weight: bold;
@@ -76,123 +79,10 @@
             transition: background 0.2s;
         }
 
-            #lang-switcher-nav button:hover,
-            #lang-switcher-nav button:focus {
+            #lang-switcher-nav button:hover, #lang-switcher-nav button:focus {
                 background: rgb(224, 235, 224);
             }
-        /* Responsive videos and iframes */
-        img, video, iframe {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .video-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -2;
-        }
-
-        .content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .card-container {
-            background: transparent;
-        }
-
-        .spacer {
-            height: 250px;
-        }
-
-        .footer-container p {
-            color: white;
-        }
-        /* Responsive container padding */
-        .container {
-            padding-left: 24px;
-            padding-right: 24px;
-        }
-        /* Touch-friendly navigation */
-        .navbar-toggle {
-            min-width: 44px;
-            min-height: 44px;
-        }
-
-        .nav > li > a, #lang-switcher-nav button {
-            padding: 12px 16px;
-            font-size: 1.1em;
-        }
-        /* Media queries for mobile */
-        @media (max-width: 992px) {
-            .container {
-                padding-left: 12px;
-                padding-right: 12px;
-            }
-
-            .spacer {
-                height: 120px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            html {
-                font-size: 15px;
-            }
-
-            .container {
-                padding-left: 8px;
-                padding-right: 8px;
-            }
-
-            .spacer {
-                height: 60px;
-            }
-
-            .navbar-nav > li > a {
-                padding: 10px 8px;
-                font-size: 1em;
-            }
-
-            #lang-switcher-nav button {
-                padding: 8px 10px;
-                font-size: 1em;
-            }
-
-            .card-container h1 {
-                font-size: 1.3em;
-            }
-
-            .footer-container p {
-                font-size: 1em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            html {
-                font-size: 14px;
-            }
-
-            .container {
-                padding-left: 4px;
-                padding-right: 4px;
-            }
-
-            .spacer {
-                height: 30px;
-            }
-
-            .card-container h1 {
-                font-size: 1.1em;
-            }
-        }
     </style>
-
 </head>
 
 <body class="lang-en">
@@ -256,7 +146,7 @@
             </div>
         </div>
         <video class="video-background" autoplay muted loop>
-            <source src="./assets/videos/backgroundWorkPhoto.MOV" type="video/mp4">
+            <source src="./assets/videos/backgroundWorkPhoto.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
