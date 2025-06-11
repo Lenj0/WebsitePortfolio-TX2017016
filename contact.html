@@ -11,8 +11,10 @@
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
 
+    <link rel="icon" type="image/x-icon" href="./assets/tiktok-favicon.ico">
+    <link rel="icon" type="image/png" href="./assets/tiktok-favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
-    <link href="./assets/favicon.ico" rel="icon">
+
     <style>
         .lang {
             display: none;
@@ -75,6 +77,14 @@
             .section-container-spacer h1 {
                 color: black;
             }
+
+        .fa-icon img {
+            transition: filter 0.2s;
+        }
+
+        .fa-icon:hover img {
+            filter: brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(7476%) hue-rotate(220deg) brightness(97%) contrast(101%);
+        }
     </style>
 
     <title>˚₊‧Get in touch‧₊˚ </title>
@@ -198,13 +208,14 @@
                                             <span class="lang lang-en">Follow me on social networks</span>
                                             <span class="lang lang-el">Ακολουθήστε με στα κοινωνικά δίκτυα</span>
                                         </h3>
-                                        <a href="https://www.facebook.com/hereliesthefrog" title="" class="fa-icon">
-                                            <i class="fa fa-facebook"></i>
+                                        <a href="https://www.tiktok.com/@lenag4357?_t=ZN-8x7AITrecAY&_r=1" title="" class="fa-icon">
+                                            <img src="./assets/tiktok-favicon.png" alt="TikTok" style="width:15px;height:15px;">
+                                        </a>
                                         </a>
                                         <a href="https://www.instagram.com/inlovingmemoryofsanity/#" title="" class="fa-icon">
                                             <i class="fa fa-instagram"></i>
                                         </a>
-                                        <a href="http://www.linkedin.com" title="" class="fa-icon">
+                                        <a href="http://www.linkedin.com" title="" class="fa-icon hidden">
                                             <i class="fa fa-linkedin"></i>
                                         </a>
 
